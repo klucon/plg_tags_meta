@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "name": "plg_tags_meta",
+  "type": "plugin",
+  "vendor": "klucon",
+  "extension_id": "klucon/plg_tags_meta",
+  "version": "0.1.0",
+  "display_name": "Tagy - Meta SEO",
+  "display_name_key": "extensions.name.plg_tags_meta",
+  "description": "Plugin pro generovani meta title, description, robots a canonical dat podle tagu.",
+  "license": "MIT",
+  "author": {
+    "name": "KLUCON",
+    "url": "https://klucon.cz"
+  },
+  "links": {
+    "homepage": "https://marketplace.klucon.cz",
+    "repository": "https://github.com/klucon/plg_tags_meta"
+  },
+  "compatibility": {
+    "core_min": "0.1.0",
+    "core_max": null,
+    "python": ">=3.12",
+    "database": [
+      "mysql",
+      "postgresql"
+    ]
+  },
+  "package": {
+    "python_package": "plg_tags_meta",
+    "entrypoint": "src.plugins.plg_tags_meta",
+    "setup_function": "setup",
+    "plugin_module": "plugin",
+    "hooks": []
+  },
+  "permissions": [],
+  "i18n": {
+    "domain": "plg_tags_meta",
+    "locales_path": "i18n",
+    "required_locales": [
+      "cs_CZ",
+      "en_GB"
+    ]
+  },
+  "migrations": {
+    "enabled": false,
+    "path": "migrations"
+  },
+  "security": {
+    "requires_signature": true,
+    "capabilities": [
+      "plugin.hooks"
+    ]
+  },
+  "marketplace": {
+    "category": "seo",
+    "tags": [
+      "tags",
+      "seo",
+      "metadata"
+    ],
+    "featured": false
+  },
+  "min_cms_version": "0.1.0",
+  "categories": [
+    "seo"
+  ],
+  "supported_locales": [
+    "cs_CZ",
+    "en_GB"
+  ],
+  "changelog": "Initial scaffold."
+}
