@@ -4,7 +4,7 @@
   "type": "plugin",
   "vendor": "klucon",
   "extension_id": "klucon/plg_tags_meta",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "display_name": "Tagy - Meta SEO",
   "display_name_key": "extensions.name.plg_tags_meta",
   "description": "Plugin pro generovani meta title, description, robots a canonical dat podle tagu.",
@@ -69,5 +69,5 @@
     "cs_CZ",
     "en_GB"
   ],
-  "changelog": "Initial scaffold."
+  "changelog": "Aktualizace dokumentace a rebuild balíčku pro GitHub distribuci."
 }
