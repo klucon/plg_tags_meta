@@ -4,70 +4,61 @@
   "type": "plugin",
   "vendor": "klucon",
   "extension_id": "klucon/plg_tags_meta",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "display_name": "Tagy - Meta SEO",
   "display_name_key": "extensions.name.plg_tags_meta",
-  "description": "Plugin pro generovani meta title, description, robots a canonical dat podle tagu.",
+  "description": "Generuje frontend meta robots, canonical a volitelnou meta description.",
   "license": "MIT",
-  "author": {
-    "name": "KLUCON",
-    "url": "https://klucon.cz"
-  },
-  "links": {
-    "homepage": "https://marketplace.klucon.cz",
-    "repository": "https://github.com/klucon/plg_tags_meta"
-  },
   "compatibility": {
-    "core_min": "0.1.0",
-    "core_max": null,
-    "python": ">=3.12",
-    "database": [
-      "mysql",
-      "postgresql"
-    ]
+    "core_min": "0.2.11",
+    "python": ">=3.12"
   },
   "package": {
-    "python_package": "plg_tags_meta",
-    "entrypoint": "src.plugins.plg_tags_meta",
-    "setup_function": "setup",
-    "plugin_module": "plugin",
-    "hooks": []
-  },
-  "permissions": [],
-  "i18n": {
-    "domain": "plg_tags_meta",
-    "locales_path": "i18n",
-    "required_locales": [
-      "cs_CZ",
-      "en_GB"
-    ]
+    "entrypoint": "src.plugins.plg_tags_meta"
   },
   "migrations": {
     "enabled": false,
     "path": "migrations"
   },
   "security": {
-    "requires_signature": true,
     "capabilities": [
-      "plugin.hooks"
+      "plugin.hooks",
+      "frontend.head"
     ]
   },
+  "settings_schema": [
+    {
+      "key": "description",
+      "type": "text",
+      "label": "Meta description"
+    },
+    {
+      "key": "robots",
+      "type": "text",
+      "label": "Robots",
+      "default": "index,follow"
+    },
+    {
+      "key": "canonical",
+      "type": "text",
+      "label": "Canonical URL",
+      "default": "auto"
+    }
+  ],
   "marketplace": {
     "category": "seo",
     "tags": [
-      "tags",
       "seo",
-      "metadata"
-    ],
-    "featured": false
+      "meta",
+      "canonical"
+    ]
   },
-  "min_cms_version": "0.1.0",
-  "categories": [
-    "seo"
-  ],
-  "supported_locales": [
+  "i18n": {
+    "domain": "plg_tags_meta"
+  },
+  "locales": [
     "cs_CZ",
     "en_GB"
   ],
-  "changelog": "Aktualizace dokumentace a rebuild balíčku pro GitHub distribuci."
+  "changelog": "Doplněn frontend.head hook pro meta robots, canonical URL a volitelnou description."
 }
