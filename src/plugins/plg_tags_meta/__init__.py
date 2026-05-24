@@ -50,4 +50,4 @@ async def render_head(
         tags.append(f'<link rel="canonical" href="{escape(_page_url(request), quote=True)}">')
     elif canonical.startswith(("http://", "https://")):
         tags.append(f'<link rel="canonical" href="{escape(canonical, quote=True)}">')
-    return "".join(tags)
+    return "\n".join(tags)

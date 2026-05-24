@@ -4,7 +4,7 @@
   "type": "plugin",
   "vendor": "klucon",
   "extension_id": "klucon/plg_tags_meta",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "display_name": "Tagy - Meta SEO",
   "display_name_key": "extensions.name.plg_tags_meta",
   "description": "Generuje frontend meta robots, canonical a volitelnou meta description.",
@@ -68,5 +68,5 @@
     "cs_CZ",
     "en_GB"
   ],
-  "changelog": "Doplněn links.repository pro GitHub synchronizaci marketplace."
+  "changelog": "Meta tagy ve frontend hlavičce se generují po jednotlivých řádcích."
 }
