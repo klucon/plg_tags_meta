@@ -4,10 +4,10 @@
   "type": "plugin",
   "vendor": "klucon",
   "extension_id": "klucon/plg_tags_meta",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "display_name": "Tagy - Meta SEO",
   "display_name_key": "extensions.name.plg_tags_meta",
-  "description": "Generuje frontend meta robots, canonical a volitelnou meta description.",
+  "description": "Generuje frontend canonical a volitelnou meta description.",
   "license": "MIT",
   "author": {
     "name": "KLUCON",
@@ -41,12 +41,6 @@
       "label": "Meta description"
     },
     {
-      "key": "robots",
-      "type": "text",
-      "label": "Robots",
-      "default": "index,follow"
-    },
-    {
       "key": "canonical",
       "type": "text",
       "label": "Canonical URL",
@@ -68,5 +62,5 @@
     "cs_CZ",
     "en_GB"
   ],
-  "changelog": "Meta tagy ve frontend hlavičce se generují po jednotlivých řádcích."
+  "changelog": "Robots meta tag byl odstraněn z tohoto pluginu; patří do samostatného nastavitelného pluginu."
 }

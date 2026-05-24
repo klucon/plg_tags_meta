@@ -38,14 +38,11 @@ async def render_head(
 ) -> str:
     settings = await _settings(db)
     description = str(settings.get("description") or "").strip()
-    robots = str(settings.get("robots") or "index,follow").strip()
     canonical = str(settings.get("canonical") or "auto").strip()
 
     tags: list[str] = []
     if description and description != site_description:
         tags.append(f'<meta name="description" content="{escape(description, quote=True)}">')
-    if robots:
-        tags.append(f'<meta name="robots" content="{escape(robots, quote=True)}">')
     if canonical == "auto":
         tags.append(f'<link rel="canonical" href="{escape(_page_url(request), quote=True)}">')
     elif canonical.startswith(("http://", "https://")):
