@@ -4,13 +4,13 @@
   "type": "plugin",
   "vendor": "klucon",
   "extension_id": "klucon/plg_tags_meta",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "display_name": "Tagy - Meta SEO",
   "display_name_key": "extensions.name.plg_tags_meta",
   "description": "Generuje frontend meta robots, canonical a volitelnou meta description.",
   "license": "MIT",
   "compatibility": {
-    "core_min": "0.2.11",
+    "core_min": "0.2.15",
     "python": ">=3.12"
   },
   "package": {
@@ -60,5 +60,5 @@
     "cs_CZ",
     "en_GB"
   ],
-  "changelog": "Doplněn frontend.head hook pro meta robots, canonical URL a volitelnou description."
+  "changelog": "Sjednocen podpis plugin setup(registry) podle core kontraktu."
 }

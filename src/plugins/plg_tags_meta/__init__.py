@@ -11,7 +11,7 @@ from src.database.models.plugin import InstalledPlugin
 PLUGIN_NAME = "plg_tags_meta"
 
 
-def setup(registry: object | None = None) -> None:
+def setup(registry: object) -> None:
     hooks.on("frontend.head", render_head)
 
 

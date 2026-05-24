@@ -7,12 +7,12 @@ Plugin pro generování meta title, description, robots a canonical dat podle ta
 | Pole | Hodnota |
 | :--- | :--- |
 | Typ | `plugin` |
-| Verze | `0.1.2` |
+| Verze | `0.1.3` |
 | Vendor | `klucon` |
 | Extension ID | `klucon/plg_tags_meta` |
 | Kategorie | `seo` |
 | Licence | MIT |
-| Core minimum | `0.2.11` |
+| Core minimum | `0.2.15` |
 | Python | `>=3.12` |
 | Entry point | `src.plugins.plg_tags_meta` |
 | Admin URL | `-` |
@@ -41,9 +41,9 @@ Release ZIP se staví z `src/**/plg_tags_meta/manifest.json` pomocí GitHub Acti
 
 1. Publikuj ZIP a metadata do marketplace serveru.
 2. V CMS otevři `/admin/marketplace`.
-3. Vyber `plg_tags_meta` a instaluj verzi `0.1.2`.
+3. Vyber `plg_tags_meta` a instaluj verzi `0.1.3`.
 4. Po instalaci ověř záznam v příslušné tabulce `installed_*`.
 
 ## Poznámky k verzi
 
-Doplněn frontend hook pro meta robots, canonical URL a volitelnou meta description.
+Sjednocen podpis plugin setup(registry) podle core kontraktu.
