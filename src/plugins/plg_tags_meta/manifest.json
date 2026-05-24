@@ -4,11 +4,19 @@
   "type": "plugin",
   "vendor": "klucon",
   "extension_id": "klucon/plg_tags_meta",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "display_name": "Tagy - Meta SEO",
   "display_name_key": "extensions.name.plg_tags_meta",
   "description": "Generuje frontend meta robots, canonical a volitelnou meta description.",
   "license": "MIT",
+  "author": {
+    "name": "KLUCON",
+    "url": "https://klucon.cz"
+  },
+  "links": {
+    "homepage": "https://marketplace.klucon.cz",
+    "repository": "https://github.com/klucon/plg_tags_meta"
+  },
   "compatibility": {
     "core_min": "0.2.15",
     "python": ">=3.12"
@@ -60,5 +68,5 @@
     "cs_CZ",
     "en_GB"
   ],
-  "changelog": "Sjednocen podpis plugin setup(registry) podle core kontraktu."
+  "changelog": "Doplněn links.repository pro GitHub synchronizaci marketplace."
 }
